@@ -1,0 +1,11 @@
+FROM nginx:alpine
+
+COPY /website /usr/share/nginx/html
+COPY /website /var/www/html
+
+# Define default command.
+#CMD ["nginx"]
+EXPOSE 80
+EXPOSE 8080
+CMD ["nginx","-g","daemon off;"]
+
