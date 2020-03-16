@@ -2,16 +2,16 @@
 
 A reverse-proxy is configured to redirect to a web app and a python-flask app, each applicattion runs in a different container and communicates each other through the network created by the docker-compose file
 
-##Web App
+## Web App
 Nginx was used to host the static web site. 
 
-##Python Flask App
+## Python Flask App
 The app connects to redis to store the times that it is visited. 
 
-##Proxy
+## Proxy
 Ngnix was configured to work as a reverse proxy, the url for the wep app is /app_1 and for the python app is /app_2.
 
-##Docker Compose
+## Docker Compose
 
 This file contains the configuration of the four containers needed to create the apps and the reverse proxy.
 
